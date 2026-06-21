@@ -129,7 +129,7 @@
         }
 
         .property-type-item i {
-            font-size: var(--text-lg);
+            font-size: var(--text-sm);
             margin-right: 0;
         }
 
@@ -169,7 +169,7 @@
         }
 
         .location-item {
-            padding: calc(var(--spacing)*3);
+            padding: calc(var(--spacing) * 3);
         }
 
         .location-item h4 {
