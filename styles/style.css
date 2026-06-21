@@ -177,23 +177,16 @@ section {
 }
 
 .mega-menu {
-    /* width: 1200px; */
+    width: 1200px;
     padding: calc(var(--spacing) * 6);
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
     margin-top: calc(var(--spacing) * 3);
     z-index: 50;
     border: none;
-    /* left: 0; */
+    left: 0;
     top: 130% !important;
-    /* transform: translateX(-60%); */
-
-
-    width: 1200px;
-    max-width: calc(100vw - 2rem);
-    left: 50%;
-    transform: translateX(-50%);
-
+    transform: translateX(-60%);
 }
 
 .col h3 {
