@@ -1,6 +1,4 @@
-    @media (max-width: 1280px) {
-
-    }
+    @media (max-width: 1280px) {}
 
 
 
@@ -91,7 +89,7 @@
             top: auto;
             left: auto;
             box-shadow: none;
-            max-height: 40vh;
+            max-height: 60vh;
             padding: calc(var(--spacing) * 4);
             overflow-x: hidden;
         }
@@ -115,7 +113,7 @@
         .modern-apartment {
             background-color: var(--color-white);
             border-radius: var(--radius-lg);
-            padding: calc(var(--spacing) * 3) calc(var(--spacing) * 1);
+            padding: calc(var(--spacing) * 2);
             margin-bottom: 0;
         }
 
@@ -127,6 +125,7 @@
         .featured-properties-text h4,
         .featured-properties-text span {
             font-size: 0.75rem;
+            line-height: 1.3333;
         }
 
         .property-type-item i {
@@ -141,7 +140,7 @@
 
         .resource-item {
             background-color: var(--color-white);
-            padding: calc(var(--spacing) * 4);
+            padding: calc(var(--spacing) * 3);
         }
 
         .resource-item-bottom {
@@ -149,13 +148,13 @@
         }
 
         .resource-item-top i {
-            width: calc(var(--spacing) * 9);
-            height: calc(var(--spacing) * 9);
+            width: calc(var(--spacing) * 8);
+            height: calc(var(--spacing) * 8);
             font-size: var(--text-base, 1rem);
         }
 
         .resource-item-top h4 {
-            font-size: 1rem;
+            font-size: var(--text-sm);
             margin-left: calc(var(--spacing) * 2);
         }
 
@@ -169,12 +168,19 @@
             gap: calc(var(--spacing) * 3) !important;
         }
 
+        .location-item {
+            padding: calc(var(--spacing)*3);
+        }
+
         .location-item h4 {
-            font-size: 0.75rem;
+            font-size: var(--text-sm);
+            white-space: nowrap;
         }
 
         .location-item span {
-            font-size: 0.75rem;
+            font-size: var(--text-xs);
+            line-height: 1.3333;
+
         }
 
         #hero .hero-heading,
@@ -193,13 +199,25 @@
             margin-inline: 4px;
         }
 
+        .section-heading {
+            width: 90%;
+            margin-inline: auto;
+            text-align: center;
+        }
+
         .section-heading h2 {
             font-size: 30px !important;
         }
 
-        .section-heading p {
+        /* .section-heading p {
             max-width: 22rem !important;
+        } */
+
+        .faq-container {
+            width: 80%;
+            margin-inline: auto;
         }
+
     }
 
     @media (max-width: 40rem) {
@@ -210,31 +228,35 @@
         .services-tabs {
             flex-wrap: wrap !important;
         }
+
     }
 
     @media (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        display: none;
-    }
 
-    #testimonialCarousel {
-        padding-inline: 0;
-    }
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none;
+        }
 
-    .testimonial-card {
-        max-width: 100%;
-    }
+        #testimonialCarousel {
+            padding-inline: 0;
+        }
 
-    .carousel-item {
-        padding-inline: 12px;
+        .testimonial-card {
+            max-width: 100%;
+        }
+
+        .carousel-item {
+            padding-inline: 12px;
+        }
+
     }
-}
 
     /* 640px  */
     @media (max-width: 48rem) {
         .services-container {
             max-width: 48rem;
+            padding-inline: 1rem;
         }
 
         .services-tabs {
@@ -245,40 +267,46 @@
             font-size: 36px;
         }
 
+
     }
 
     /* 768px  */
     @media (max-width: 64rem) {
         .services-container {
             max-width: 64rem;
+            padding-inline: 2rem;
+
         }
 
         .section-heading h2 {
             font-size: 36px;
         }
 
+
     }
 
     /* 1024px */
-    @media (min-width: 80rem) {
+    @media (max-width: 80rem) {
         .services-container {
             max-width: 80rem;
+            padding-inline: 3rem;
         }
     }
 
 
     @media (max-width: 1024px) {
-    .bottom-solid-circle,
-    .bottom-regular-circle,
-     .regular-circle,
-     .-solid-circle{
-        display: none;
+
+        .bottom-solid-circle,
+        .bottom-regular-circle,
+        .regular-circle,
+        .solid-circle {
+            display: none;
+        }
     }
-}
+
     @media (max-width: 768px) {
         .footer-top {
             flex-direction: column;
             text-align: center;
         }
     }
-
