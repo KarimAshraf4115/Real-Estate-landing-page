@@ -98,6 +98,11 @@
     --default-mono-font-family: var(--font-mono);
 }
 
+::selection{
+    background-color: #a684ff;
+    color: #fff !important;
+}
+
 
 body {
     font-family: 'EXO', sans-serif;
